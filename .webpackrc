@@ -1,2 +1,11 @@
 {
+    "disableCSSModules": true,
+    "proxy": {
+        "/api": {
+        "target": "https://5b1e22a14d4fc00014b07d60.mockapi.io",
+        "changeOrigin": true,
+        "pathRewrite": { "^/api" : "" }
+        }
+    }
+
 }

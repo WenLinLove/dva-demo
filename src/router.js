@@ -3,16 +3,18 @@ import { Router, Route, Switch } from 'dva/router';
 import IndexPage from './routes/IndexPage';
 import Expire from './components/expire';
 import Notyetdue from './components/notyetdue';
+import Demo from './components/demo';
 
 
 
-function RouterConfig({ history }) {
+function RouterConfig({ history, app }) {
   return (
     <Router history={history}>
       <Switch>
         <Route path="/" exact component={IndexPage} />
-        <Route path="/expire" exact component={Expire} />
-        <Route path="/noexpire" exact component={Notyetdue} />
+        <Route path="/expire" component={Expire} />
+        <Route path="/noexpire" component={Notyetdue} />
+        <Route path="/demo" component={Demo} />
       </Switch>
     </Router>
   );

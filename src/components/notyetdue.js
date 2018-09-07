@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'dva';
-import nostyle from './notyetdue.less';
+import './notyetdue.less';
 
 
 
@@ -38,12 +38,12 @@ class Notyetdue extends Component {
 
         return(
             
-                <div className={nostyle.ntan}>
+                <div className="ntan">
 
                     这是底部内容
-                    <div className={nostyle.ntan1} style={this.state.none}>
-                        <div className={nostyle.ntan2}>
-                            <p className={nostyle.ntan3} onClick={ () => this.close() }></p>
+                    <div className="ntan1" style={this.state.none}>
+                        <div className="ntan2">
+                            <p className="ntan3" onClick={ () => this.close() }></p>
                         </div>
                     </div>
 
